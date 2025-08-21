@@ -1,0 +1,6 @@
+@Amazon.WebAPI.PL_HostAddress = http://localhost:5109
+
+GET {{Amazon.WebAPI.PL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
