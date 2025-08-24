@@ -8,8 +8,11 @@
         public string? Description { get; set; }
         public string Code { get; set; } = null!;
         public decimal Price { get; set; }
+        public int CategoryId { get; set; }
+        public int BrandId { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime ModifiedDate { get; set; }
         public int SeUserId { get; set; }
+       
     }
 }

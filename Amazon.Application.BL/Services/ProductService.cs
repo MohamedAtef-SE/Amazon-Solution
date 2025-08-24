@@ -2,6 +2,7 @@
 using Amazon.DL.Contracts;
 using Amazon.DL.Entites;
 using Amazon.DL.Repositories;
+using AutoMapper;
 using System.Threading.Tasks;
 
 namespace Amazon.Application.BL.Services
@@ -9,29 +10,33 @@ namespace Amazon.Application.BL.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepository;
-        public ProductService(IProductRepository productRepository)
+        private readonly IMapper _mapper;
+        public ProductService(IProductRepository productRepository, IMapper mapper)
         {
             this._productRepository = productRepository;
+            this._mapper = mapper;
         }
         public  async Task<List<ProductDTO>> GetAllProductsAsync()
         {
-            List<ProductDTO> productsDTOList = new List<ProductDTO>();
+            //List<ProductDTO> productsDTOList = new List<ProductDTO>();
 
-            var products = await  _productRepository.GetAllProductsAsync();
+            //var products = await  _productRepository.GetAllProductsAsync();
 
-            foreach (Product product in products)
-            {
-                ProductDTO productDTO = new ProductDTO()
-                {
-                    Id = product.Id,
-                    Code = product.Code,
-                    Description = product.Description,
-                    Price = product.Price,
-                    ProductName = product.ProductName 
-                };
-                productsDTOList.Add(productDTO);
-            }
+            //foreach (Product product in products)
+            //{
+            //    ProductDTO productDTO = new ProductDTO()
+            //    {
+            //        Id = product.Id,
+            //        Code = product.Code,
+            //        Description = product.Description,
+            //        Price = product.Price,
+            //        ProductName = product.ProductName 
+            //    };
+            //    productsDTOList.Add(productDTO);
+            //}
 
+            var products = await _productRepository.GetAllProductsAsync();
+            var productsDTOList = _mapper.Map<List<ProductDTO>>(products);
             return productsDTOList;
         }
 
