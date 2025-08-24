@@ -1,0 +1,108 @@
+[
+  {
+    "Id": 0,
+    "ProductName": "Laptop",
+    "Description": "A high-performance laptop for all your computing needs.",
+    "Price": 999.99,
+    "Code": "LP1001",
+    "CreatedDate": "2023-01-15T10:00:00Z",
+    "ModifiedDate": "2023-01-20T12:00:00Z",
+    "CategoryId": 1,
+    "BrandId":  2
+  },
+  {
+    "Id": 0,
+    "ProductName": "Smartphone",
+    "Description": "A latest model smartphone with advanced features.",
+    "Price": 699.99,
+    "Code": "LP1002",
+    "CreatedDate": "2023-01-12T10:00:00Z",
+    "ModifiedDate": "2023-01-21T12:00:00Z",
+    "CategoryId": 2,
+    "BrandId": 3
+  },
+  {
+    "Id": 0,
+    "ProductName": "Headphones",
+    "Description": "Noise-cancelling over-ear headphones.",
+    "Price": 199.99,
+    "Code": "LD1012",
+    "CreatedDate": "2023-01-12T10:00:00Z",
+    "ModifiedDate": "2023-01-21T12:00:00Z",
+    "CategoryId": 1,
+    "BrandId": 2
+  },
+  {
+    "Id": 0,
+    "ProductName": "Coffee Maker",
+    "Description": "Brew the perfect cup of coffee every morning.",
+    "Price": 49.99,
+    "Code": "LP1002",
+    "CreatedDate": "2023-01-12T10:00:00Z",
+    "ModifiedDate": "2023-01-21T12:00:00Z",
+    "CategoryId": 3,
+    "BrandId": 4
+  },
+  {
+    "Id": 0,
+    "ProductName": "Electric Kettle",
+    "Description": "Fast boiling electric kettle with auto shut-off feature.",
+    "Price": 29.99,
+    "Code": "LP1004",
+    "CreatedDate": "2023-01-12T10:00:00Z",
+    "ModifiedDate": "2023-01-21T12:00:00Z",
+    "CategoryId": 2,
+    "BrandId": 3
+  },
+  {
+    "Id": 0,
+    "ProductName": "Gaming Console",
+    "Description": "Next-gen gaming console for immersive gaming experience.",
+    "Price": 499.99,
+    "Code": "LP100D",
+    "CreatedDate": "2023-01-12T10:00:00Z",
+    "ModifiedDate": "2023-01-21T12:00:00Z",
+    "CategoryId": 4,
+    "BrandId": 5
+  },
+  {
+    "Id": 0,
+    "ProductName": "Smartwatch",
+    "Description": "Stay connected and track your fitness with this smartwatch.",
+    "Price": 249.99,
+    "Code": "LP1002",
+    "CreatedDate": "2023-01-12T10:00:00Z",
+    "ModifiedDate": "2023-01-21T12:00:00Z",
+    "CategoryId": 2,
+    "BrandId": 3
+  },
+  {
+    "Id": 0,
+    "ProductName": "Bluetooth Speaker",
+    "Code": "LP1250",
+    "Description": "Portable Bluetooth speaker with excellent sound quality.",
+    "Price": 89.99,
+    "CategoryId": 1,
+    "BrandId": 2
+  },
+  {
+    "Id": 0,
+    "ProductName": "Tablet",
+    "Code": "LP1206",
+    "Description": "Lightweight tablet perfect for work and entertainment.",
+    "Price": 399.99,
+    "CategoryId": 4,
+    "BrandId": 5
+  },
+  {
+    "Id": 0,
+    "ProductName": "Wireless Mouse",
+    "Description": "Ergonomic wireless mouse with adjustable DPI settings.",
+    "Price": 24.99,
+    "Code": "LP1202",
+    "CreatedDate": "2023-01-10T10:00:00Z",
+    "ModifiedDate": "2023-12-21T12:00:00Z",
+    "CategoryId": 3,
+    "BrandId": 4
+  }
+]

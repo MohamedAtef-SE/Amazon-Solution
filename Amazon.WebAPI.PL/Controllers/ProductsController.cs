@@ -14,7 +14,7 @@ namespace Amazon.WebAPI.PL.Controllers
             _productService = productService;
         }
 
-        [HttpGet] // GET: {{BaseURL}}/api/Products
+        [HttpGet("GetAllProducts")] // GET: {{BaseURL}}/api/Products
         public async Task<ActionResult<List<ProductDTO>>> GetAllProductsAsync()
         {
             var products = await _productService.GetAllProductsAsync();
